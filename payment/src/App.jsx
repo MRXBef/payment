@@ -20,10 +20,10 @@ function App() {
           alignItems: "center"
         }}
       >
-        <h1 style={{fontSize: "1rem"}}>abfrozen.vercel.app</h1>
-        <p style={{marginTop: "", marginBottom: "-10px", fontSize: "0.5rem"}} className="read-the-docs">Powered by:</p>
+        <h1 style={{fontSize: "1.5rem"}}>abfrozen.vercel.app</h1>
+        <p style={{marginTop: "", marginBottom: "-20px", fontSize: "0.5rem"}} className="read-the-docs">Powered by:</p>
         <a href="#">
-          <img className="logo" style={{width: "40px", height: "20px"}} src={gopay} alt="" />
+          <img className="logo" style={{width: "60px", height: "20px"}} src={gopay} alt="" />
         </a>
 
         <div>
@@ -34,6 +34,7 @@ function App() {
               padding: "5px",
               margin: "20px",
               backgroundColor: "#fff",
+              marginBottom: "25px"
             }}
             src={qr}
             className="logo"
