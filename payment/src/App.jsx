@@ -7,20 +7,35 @@ import "./App.css";
 
 function App() {
   // const [count, setCount] = useState(0);
+  const monthList = {
+    0: "January",
+    1: "February",
+    2: "March",
+    3: "April",
+    4: "May",
+    5: "June",
+    6: "July",
+    7: "August",
+    8: "September",
+    9: "October",
+    10: "November",
+    11: "December",
+  }
 
+  const month = new Date().getMonth()
   return (
     <>
       <div
         style={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
+          // paddingTop: "20vh",
           width: "100%",
           height: "100vh",
           alignItems: "center"
         }}
       >
-        <h1 style={{fontSize: "1.5rem"}}>abfrozen.vercel.app</h1>
+        <h1 style={{fontSize: "1.5rem", marginTop: "15vh"}}>abfrozen.vercel.app</h1>
         <p style={{marginTop: "", marginBottom: "-20px", fontSize: "0.5rem"}} className="read-the-docs">Powered by:</p>
         <a href="#">
           <img className="logo" style={{width: "60px", height: "20px"}} src={gopay} alt="" />
@@ -44,7 +59,7 @@ function App() {
         </div>
 
         <h1 style={{fontSize: "1rem"}}>IDR 147.000</h1>
-        <p style={{fontSize: "0.5rem"}} className="read-the-docs">Scan the QR Code and complete payment before 20, October 2025</p>
+        <p style={{fontSize: "0.5rem"}} className="read-the-docs">Scan the QR Code and complete payment before 20, {monthList[month]} {new Date().getFullYear()}</p>
       </div>
     </>
   );
