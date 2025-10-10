@@ -14,12 +14,16 @@ function App() {
         style={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-around",
+          justifyContent: "center",
+          width: "100%",
+          height: "auto",
+          alignItems: "center"
         }}
       >
-        <h1>abfrozen.vercel.app</h1>
+        <h1 style={{fontSize: "3rem"}}>abfrozen.vercel.app</h1>
+        <p style={{marginTop: "-20px", marginBottom: "-10px"}} className="read-the-docs">Powered by:</p>
         <a href="#">
-          <img className="logo" style={{width: "100px", height: "40px", marginBottom: ""}} src={gopay} alt="" />
+          <img className="logo" style={{width: "80px", height: "40px"}} src={gopay} alt="" />
         </a>
 
         <div>
@@ -38,7 +42,7 @@ function App() {
           {/* </a> */}
         </div>
 
-        <h1>IDR 147.000</h1>
+        <h1 style={{fontSize: "3rem"}}>IDR 147.000</h1>
         <p className="read-the-docs">Scan the QR Code and complete payment before 20, October 2025</p>
       </div>
     </>
