@@ -20,19 +20,19 @@ function App() {
           alignItems: "center"
         }}
       >
-        <h1 style={{fontSize: "3rem"}}>abfrozen.vercel.app</h1>
-        <p style={{marginTop: "-20px", marginBottom: "-10px"}} className="read-the-docs">Powered by:</p>
+        <h1 style={{fontSize: "1rem"}}>abfrozen.vercel.app</h1>
+        <p style={{marginTop: "", marginBottom: "-10px", fontSize: "0.5rem"}} className="read-the-docs">Powered by:</p>
         <a href="#">
-          <img className="logo" style={{width: "80px", height: "40px"}} src={gopay} alt="" />
+          <img className="logo" style={{width: "40px", height: "20px"}} src={gopay} alt="" />
         </a>
 
         <div>
           {/* <a href="https://vite.dev" target="_blank"> */}
           <img
             style={{
-              transform: "scale(2.0)",
-              padding: "10px",
-              margin: "60px",
+              transform: "scale(1.5)",
+              padding: "5px",
+              margin: "20px",
               backgroundColor: "#fff",
             }}
             src={qr}
@@ -42,8 +42,8 @@ function App() {
           {/* </a> */}
         </div>
 
-        <h1 style={{fontSize: "3rem"}}>IDR 147.000</h1>
-        <p className="read-the-docs">Scan the QR Code and complete payment before 20, October 2025</p>
+        <h1 style={{fontSize: "1rem"}}>IDR 147.000</h1>
+        <p style={{fontSize: "0.5rem"}} className="read-the-docs">Scan the QR Code and complete payment before 20, October 2025</p>
       </div>
     </>
   );
