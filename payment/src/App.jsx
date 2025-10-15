@@ -53,7 +53,7 @@ function App() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#888" />
+            <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#000" />
           </svg>
 
           <h1 style={{ fontSize: "1.5rem", margin: 0 }}>abfrozen.vercel.app</h1>
