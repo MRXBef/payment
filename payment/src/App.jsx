@@ -20,9 +20,9 @@ function App() {
     9: "October",
     10: "November",
     11: "December",
-  }
+  };
 
-  const month = new Date().getMonth()
+  const month = new Date().getMonth();
   return (
     <>
       <div
@@ -32,13 +32,45 @@ function App() {
           // paddingTop: "20vh",
           width: "100%",
           height: "100vh",
-          alignItems: "center"
+          alignItems: "center",
         }}
       >
-        <h1 style={{fontSize: "1.5rem", marginTop: "15vh"}}>abfrozen.vercel.app</h1>
-        <p style={{marginTop: "", marginBottom: "-20px", fontSize: "0.5rem"}} className="read-the-docs">Powered by:</p>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center", // ⬅️ ini kunci agar sejajar vertikal
+            justifyContent: "center",
+            width: "100%",
+            marginTop: "15vh",
+            gap: "10px",
+          }}
+        >
+          <svg
+            style={{ transform: "scale(0.7)" }}
+            width="40" // kamu bisa ubah ukuran biar proporsional
+            height="40"
+            viewBox="0 0 76 65"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff" />
+          </svg>
+
+          <h1 style={{ fontSize: "1.5rem", margin: 0 }}>abfrozen.vercel.app</h1>
+        </div>
+        <p
+          style={{ marginTop: "", marginBottom: "-20px", fontSize: "0.5rem" }}
+          className="read-the-docs"
+        >
+          Powered by:
+        </p>
         <a href="#">
-          <img className="logo" style={{width: "60px", height: "20px"}} src={gopay} alt="" />
+          <img
+            className="logo"
+            style={{ width: "60px", height: "20px" }}
+            src={gopay}
+            alt=""
+          />
         </a>
 
         <div>
@@ -49,7 +81,7 @@ function App() {
               padding: "5px",
               margin: "20px",
               backgroundColor: "#fff",
-              marginBottom: "25px"
+              marginBottom: "25px",
             }}
             src={qr}
             className="logo"
@@ -58,8 +90,13 @@ function App() {
           {/* </a> */}
         </div>
 
-        <h1 style={{fontSize: "1rem"}}>IDR 147.000</h1>
-        <p style={{fontSize: "0.5rem"}} className="read-the-docs">Scan the QR Code and complete payment before 20, {monthList[month]} {new Date().getFullYear()}</p>
+        <h1 style={{ fontSize: "1rem" }}>IDR 147.000</h1>
+        <p style={{ fontSize: "0.6rem" }} className="read-the-docs">
+          Scan the QR Code and Paste the "Transaction_ID" or "Reference_ID"  into the Variable at the configuration code. Do it before {monthList[month]}{" "}
+          {new Date().getFullYear()}
+          <tr></tr>
+          Ignore this if you have already made a payment.
+        </p>
       </div>
     </>
   );
