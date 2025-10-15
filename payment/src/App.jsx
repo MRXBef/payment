@@ -93,8 +93,8 @@ function App() {
         <h1 style={{ fontSize: "1rem" }}>IDR 167,000,00</h1>
         <div style={{paddingLeft: "15px", paddingRight: "15px"}}>
           <p style={{ fontSize: "0.6rem" }} className="read-the-docs">
-            Scan the QR Code and Paste the "Transaction_ID" or "Reference_ID"  into the Variable at the configuration code and make sure the payment amount is correct. Do it before 18 {monthList[month]}{" "}.
-            {new Date().getFullYear()}
+            Scan the QR Code and Paste the "Transaction_ID" or "Reference_ID"  into the Variable at the configuration code and make sure the payment amount is correct. Do it before 18 {monthList[month]}{" "}
+            {new Date().getFullYear()}.
             <tr></tr>
             <tr></tr>
             Ignore this Instruction if you have already made a payment this month.
