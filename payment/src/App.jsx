@@ -53,7 +53,7 @@ function App() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff" />
+            <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#888" />
           </svg>
 
           <h1 style={{ fontSize: "1.5rem", margin: 0 }}>abfrozen.vercel.app</h1>
@@ -91,12 +91,14 @@ function App() {
         </div>
 
         <h1 style={{ fontSize: "1rem" }}>IDR 147.000</h1>
-        <p style={{ fontSize: "0.6rem" }} className="read-the-docs">
-          Scan the QR Code and Paste the "Transaction_ID" or "Reference_ID"  into the Variable at the configuration code. Do it before {monthList[month]}{" "}
-          {new Date().getFullYear()}
-          <tr></tr>
-          Ignore this if you have already made a payment.
-        </p>
+        <div style={{paddingLeft: "15px", paddingRight: "15px"}}>
+          <p style={{ fontSize: "0.6rem" }} className="read-the-docs">
+            Scan the QR Code and Paste the "Transaction_ID" or "Reference_ID"  into the Variable at the configuration code. Do it before {monthList[month]}{" "}
+            {new Date().getFullYear()}
+            <tr></tr>
+            Ignore this if you have already made a payment.
+          </p>
+        </div>
       </div>
     </>
   );
